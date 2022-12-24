@@ -1,0 +1,36 @@
+<head>
+    <tag>File Format</tag>
+    <tag>New Proposal</tag>
+    <version>0.9.0</version>
+    <slug>standard-format</slug>
+    <author email="mcgonaglew@fairfiledprogramming.org" github="William-McGonagle">
+        William McGonagle
+    </author>
+    <author email="chaudharin@fairfiledprogramming.org" github="NeilChaudhari">
+        Neil Chaudhari
+    </author>
+</head>
+
+# Standard Format
+
+The standard format is a text-based file format similar to Markdown and HTML. This format is formally used in the FPA Vault to manage all standardization information.
+
+## Purpose
+
+The purpose of this file format is to create high quality specification sheets that can be easily converted to HTML and PDF form with advanced control over styling. In contrast to markdown, this format allows for more metadata and advanced features to be supported, while still maintaining readability.
+
+Without this format, the vault would not be able to offer the excellent user and developer experiences that it does through extracting rich data from each file.
+
+<note>
+This format is just in development stage. Do not base any production software off of this standard.
+</note>
+
+### Why not Markdown?
+
+### Why not HTML?
+
+<code lang="javascript">
+
+console.log("This is a quick test");
+
+</code>

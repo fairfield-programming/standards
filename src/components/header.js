@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-import Logo from "../res/fpa.svg";
+import Logo from "../res/logo.svg";
 
 const Header = ({  }) => (
   <header aria-label="Site Header" class="shadow-sm">
@@ -16,11 +16,10 @@ const Header = ({  }) => (
           aria-label="Site Nav"
           class="w-min gap-4 text-sm font-medium flex md:gap-8"
         >
-          <a class="text-gray-500 no-underline" href="/mission">Mission</a>
-          <a class="text-gray-500 no-underline" href="/impact">Impact</a>
-          <a class="text-gray-500 no-underline" href="/programs">Programs</a>
-          <a class="text-gray-500 no-underline" href="/partnerships">Partnerships</a>
-          <a class="text-gray-500 no-underline" href="/support">Support</a>
+          <a class="text-gray-500 no-underline" href="/about">About</a>
+          <a class="text-gray-500 no-underline" href="/purpose">Purpose</a>
+          <a class="text-gray-500 no-underline" href="/standards">Standards</a>
+          <a class="text-gray-500 no-underline" href="/create">Create</a>
         </nav>
       </div>
     </div>

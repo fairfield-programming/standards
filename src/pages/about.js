@@ -6,10 +6,10 @@ import Seo from "../components/seo"
 
 import Markdown from "../components/markdown"
 
-function AccessibilityPage() {
+function ContactPage() {
 
-    const fileData = require('!!raw-loader!../../data/accessibility.txt')
-
+    const purpose = require('!!raw-loader!../../data/about.md')
+    
     return (
         <Layout>
             <section>
@@ -18,21 +18,20 @@ function AccessibilityPage() {
                 >
                     <div class="mx-auto max-w-4xl text-center">
                         <h1 class="text-3xl font-extrabold sm:text-5xl">
-                            Accessibility
+                            About the Vault
                         </h1>
-
                     </div>
                 </div>
             </section>
             <section>
                 <div className="max-w-6xl mx-auto pb-16 px-4 flex flex-col">
-                    <Markdown data={fileData.default.toString()} />
+                    <Markdown data={purpose.default.toString()} />
                 </div>
             </section>
         </Layout>
     )
 }
 
-export const Head = () => <Seo title="Accessibility" />
+export const Head = () => <Seo title="Contacting the FPA" />
 
-export default AccessibilityPage
+export default ContactPage

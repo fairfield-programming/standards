@@ -1,16 +1,20 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-function Person({ first, last, photo, biography }) {
+function Person({ name, github, email }) {
 
-    let slug = `${first}-${last}`.toLowerCase();
-    let description = biography.split(' ').slice(0, 40).join(' ');
+    let slug = `https://github.com/${github}`;
 
-    return <a className="block w-full h-full" href={`/team/${slug}`}>
-        <div className="rounded shadow p-4 h-full">
-          <img src={photo} class="rounded-full w-1/2 mb-4" />
-            <h3 className="text-lg font-bold">{first} {last}</h3>
-            <p className="text-md">{description || ""}</p>
+    return <a className="block w-full h-full" href={slug}>
+        <div className="rounded shadow p-4 h-full flex flex-row gap-4">
+            <div class="w-20">
+                <img src={`https://github.com/${github}.png`} class="rounded-full w-20 mb-4" />
+            </div>
+            <div class="w-full">
+                <h3 className="text-lg font-bold">{name}</h3>
+                <p class="text-sm">{email}</p>
+                <p class="text-sm">@{github} on Github</p>
+            </div>
         </div>
     </a>
 

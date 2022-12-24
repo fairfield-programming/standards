@@ -1,0 +1,88 @@
+[
+    {
+        "title": "Standard Format",
+        "description": "The standard format is a text-based file format similar to Markdown and HTML. This format is formally used in the FPA Vault to manage all standardization information.",
+        "version": "0.9.0",
+        "tags": [
+            "File Format",
+            "New Proposal"
+        ],
+        "slug": "standard-format",
+        "authors": [
+            {
+                "name": "William McGonagle",
+                "email": "mcgonaglew@fairfiledprogramming.org",
+                "github": "William-McGonagle"
+            },
+            {
+                "name": "Neil Chaudhari",
+                "email": "chaudharin@fairfiledprogramming.org",
+                "github": "NeilChaudhari"
+            }
+        ],
+        "sections": {
+            "general": [
+                "The standard format is a text-based file format similar to Markdown and HTML. This format is formally used in the FPA Vault to manage all standardization information."
+            ],
+            "purpose": [
+                "The purpose of this file format is to create high quality specification sheets that can be easily converted to HTML and PDF form with advanced control over styling. In contrast to markdown, this format allows for more metadata and advanced features to be supported, while still maintaining readability.",
+                "Without this format, the vault would not be able to offer the excellent user and developer experiences that it does."
+            ]
+        },
+        "tableOfContents": [
+            {
+                "name": "Purpose",
+                "contents": [
+                    {
+                        "name": "Why not Markdown?",
+                        "contents": []
+                    },
+                    {
+                        "name": "Why not HTML?",
+                        "contents": []
+                    }
+                ]
+            }
+        ],
+        "body": [
+            {
+                "type": "h1",
+                "data": "Standard Format"
+            },
+            {
+                "type": "p",
+                "data": "The standard format is a text-based file format similar to Markdown and HTML. This format is formally used in the FPA Vault to manage all standardization information."
+            },
+            {
+                "type": "h2",
+                "data": "Purpose"
+            },
+            {
+                "type": "p",
+                "data": "The purpose of this file format is to create high quality specification sheets that can be easily converted to HTML and PDF form with advanced control over styling. In contrast to markdown, this format allows for more metadata and advanced features to be supported, while still maintaining readability."
+            },
+            {
+                "type": "p",
+                "data": "Without this format, the vault would not be able to offer the excellent user and developer experiences that it does."
+            },
+            {
+                "type": "html_note",
+                "parameters": {},
+                "children": [
+                    {
+                        "type": "p",
+                        "data": "This format is just in development stage. Do not base any production software off of this standard."
+                    }
+                ]
+            },
+            {
+                "type": "h3",
+                "data": "Why not Markdown?"
+            },
+            {
+                "type": "h3",
+                "data": "Why not HTML?"
+            }
+        ]
+    }
+]

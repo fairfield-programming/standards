@@ -9,10 +9,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Fairfield Programming Association`,
-    description: `Our mission is to educate high-school and college-aged (ages 14-22) individuals about computer science, engineering, and programming. To do this, we create educational resources, scholastic aptitude exams, programming competitions, and other events.`,
+    title: `FPA Vault`,
+    description: `The FPA Vault provides open access to anyone who would like to adapt standards put forth by the FPA.`,
     author: `@fairfieldprogramming`,
-    siteUrl: `https://about.fairfieldprogramming.org`,
+    siteUrl: `https://standards.fairfieldprogramming.org`,
   },
   plugins: [
     'gatsby-plugin-postcss',
@@ -23,15 +23,15 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: false,
-        sitemap: 'https://about.fairfieldprogramming.org/sitemap/sitemap-index.xml',
+        sitemap: 'https://standards.fairfieldprogramming.org/sitemap/sitemap-index.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Fairfield Programming Association`,
-        short_name: `fpa`,
+        name: `FPA Vault`,
+        short_name: `vault`,
         start_url: `/`,
         background_color: `#0F006C`,
         theme_color: `#0F006C`,
