@@ -26,7 +26,7 @@
             ],
             "purpose": [
                 "The purpose of this file format is to create high quality specification sheets that can be easily converted to HTML and PDF form with advanced control over styling. In contrast to markdown, this format allows for more metadata and advanced features to be supported, while still maintaining readability.",
-                "Without this format, the vault would not be able to offer the excellent user and developer experiences that it does."
+                "Without this format, the vault would not be able to offer the excellent user and developer experiences that it does through extracting rich data from each file."
             ]
         },
         "tableOfContents": [
@@ -63,7 +63,7 @@
             },
             {
                 "type": "p",
-                "data": "Without this format, the vault would not be able to offer the excellent user and developer experiences that it does."
+                "data": "Without this format, the vault would not be able to offer the excellent user and developer experiences that it does through extracting rich data from each file."
             },
             {
                 "type": "html_note",
@@ -82,6 +82,18 @@
             {
                 "type": "h3",
                 "data": "Why not HTML?"
+            },
+            {
+                "type": "html_code",
+                "parameters": {
+                    "lang": "javascript"
+                },
+                "children": [
+                    {
+                        "type": "p",
+                        "data": "console.log(\"This is a quick test\");"
+                    }
+                ]
             }
         ]
     }
