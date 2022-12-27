@@ -45,10 +45,4 @@ gatsby develop
 
 **Note:** It can take anywhere from a few seconds to a few minutes to start the website, but once the website is live, it does [hot reloading](https://www.gatsbyjs.com/docs/reference/local-development/fast-refresh/).
 
-## Create
-On `/create` page, the user can use the in-browser standard editor to create a standard file. On the left pane, the user can type in code. At the same time, on the right pane, a preview of the rendered standard document will appear.
-
-## Search
-The search feature lets users search for standards based on the name, authors, or category of the standard. This feature allows people to quickly access what they are looking for and adds to the maintainability of the entire website in the long term.
-
 ## Contribute
