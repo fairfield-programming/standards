@@ -31,7 +31,7 @@ The new Fairfield Programming Association Standards website is built in Gatsby a
 npm install
 ```
 
-4. Run the below command to start the website
+4. Run the below command to start the website.
 
 ```bash
 gatsby develop
