@@ -25,23 +25,26 @@ function IndexPage() {
             </p>
 
             <div class="mt-8 flex flex-wrap justify-center gap-4">
-              <a
+              <Link
                 class="block w-full rounded bg-active px-12 py-3 text-sm font-medium text-white shadow hover:bg-active focus:outline-none focus:ring active:bg-active sm:w-auto"
-                href="/standards"
+                to="/standards"
               >
                 View Standards
-              </a>
+              </Link>
 
-              <a
+              <Link
                 class="block w-full rounded px-12 py-3 text-sm font-medium text-active shadow hover:text-active focus:outline-none focus:ring active:text-active sm:w-auto"
-                href="/purpose"
+                to="/purpose"
               >
                 Our Purpose
-              </a>
+              </Link>
             </div>
           </div>
         </div>
       </section> 
+      <section>
+        {/* <Categories/> */}
+      </section>
     </Layout>
   )
 }
