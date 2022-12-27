@@ -32,6 +32,6 @@ function ContactPage() {
     )
 }
 
-export const Head = () => <Seo title="Contacting the FPA" />
+export const Head = () => <Seo title="About" />
 
 export default ContactPage

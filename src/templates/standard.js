@@ -19,8 +19,8 @@ const Standard = ({ pageContext }) => {
             <h1 className="font-bold text-4xl">{title}</h1>
             <div className=" mb-4">
                 <a class="text-sky-400 hover:underline hover:text-sky-500" href={`/standards/${slug}.html`}>View as HTML</a> 
-                &nbsp; &bull; &nbsp;
-                <a class="text-sky-400 hover:underline hover:text-sky-500" href={`/standards/pdf/standards-${slug}-html.pdf`}>View as PDF</a>
+                {/* &nbsp; &bull; &nbsp;
+                <a class="text-sky-400 hover:underline hover:text-sky-500" href={`/standards/pdf/standards-${slug}-html.pdf`}>View as PDF</a> */}
             </div>
             <p className="text-xl mb-16 max-w-2xl">{description}</p>
             

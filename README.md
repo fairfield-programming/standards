@@ -2,7 +2,7 @@
 <img width="200" src="https://raw.githubusercontent.com/fairfield-programming/backend-server/d84cd53499177b9069d3a0a72c80701627190c18/.github/media/logo-full.svg">
 </p>
 
-# Fairfield Programming Association Vault
+# Fairfield Programming Association Vault [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Check%20out%20the%20Vault%E2%80%93%20an%20open-source%20and%20modern%20standardization%20group%20run%20by%20the%20Fairfield%20Programming%20Association.&url=https://github.com/fairfield-programming/standards&via=FairfieldCoding)
 
 The Fairfield Programming Association Standards website provides open access to anyone who would like to adapt standards put forth by the FPA.
 
@@ -18,6 +18,12 @@ The Fairfield Programming Association Standards website provides open access to 
 The new Fairfield Programming Association Standards website is built in Gatsby and uses Tailwind CSS for the styling. This enables us to keep down server costs while also providing an excellent user and developer experience. Most of our pages are DSG ([Deferred Static Generation](https://www.gatsbyjs.com/docs/how-to/rendering-options/using-deferred-static-generation/)), which means that most of the information on the website can be changed by modifying the information inside of the data folder.
 
 ## Features
+
+### Create
+On `/create` page, the user can use the in-browser standard editor to create a standard file. On the left pane, the user can type in code. At the same time, on the right pane, a preview of the rendered standard document will appear.
+
+### Search
+The search feature lets users search for standards based on the name, authors, or category of the standard. This feature allows people to quickly access what they are looking for and adds to the maintainability of the entire website in the long term.
 
 ## Setup
 
