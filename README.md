@@ -1,3 +1,7 @@
+<p align="center">
+<img width="200" src="https://raw.githubusercontent.com/fairfield-programming/backend-server/d84cd53499177b9069d3a0a72c80701627190c18/.github/media/logo-full.svg">
+</p>
+
 # Fairfield Programming Association Standards
 
 The Fairfield Programming Association Standards website provides open access to anyone who would like to adapt standards put forth by the FPA.
