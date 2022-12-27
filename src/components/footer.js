@@ -26,19 +26,19 @@ const Footer = ({ siteTitle }) => {
           class="flex flex-wrap justify-center gap-6 md:gap-8 lg:justify-end lg:gap-12"
         >
           <li>
-            <a class="text-gray-700 transition hover:text-gray-700/75" href="https://about.fairfieldprogramming.org">
+            <Link class="text-gray-700 transition hover:text-gray-700/75" to="https://about.fairfieldprogramming.org">
               About the FPA
-            </a>
+            </Link>
           </li>
           <li>
-            <a class="text-gray-700 transition hover:text-gray-700/75" href="https://about.fairfieldprogramming.org/terms">
+            <Link class="text-gray-700 transition hover:text-gray-700/75" to="https://about.fairfieldprogramming.org/terms">
               Terms
-            </a>
+            </Link>
           </li>
           <li>
-            <a class="text-gray-700 transition hover:text-gray-700/75" href="https://about.fairfieldprogramming.org/privacy">
+            <Link class="text-gray-700 transition hover:text-gray-700/75" to="https://about.fairfieldprogramming.org/privacy">
               Privacy
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
