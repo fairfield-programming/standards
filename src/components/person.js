@@ -12,7 +12,7 @@ function Person({ name, github, email }) {
             </div>
             <div class="w-full">
                 <h3 className="text-lg font-bold">{name}</h3>
-                <p class="text-sm">{email}</p>
+                <a class="text-sm text-sky-400 hover:text-sky-500 hover:underline" href={`mailto:${email}`}>{email}</a>
                 <p class="text-sm">@{github} on Github</p>
             </div>
         </div>

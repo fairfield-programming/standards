@@ -25,8 +25,6 @@ const GenerateTableOfContents = (pageContext) => {
     const { title, authors, version, tableOfContents } = pageContext;
     const formatter =  new Intl.ListFormat('en', { style: 'long', type: 'conjunction' });
 
-    console.log(tableOfContents);
-
     return <section id="table-of-contents" className="max-w-3xl mx-auto px-4 py-8">
         <h2 class="text-3xl font-black">Table of Contents</h2>
         <nav class="px-8 mt-4">
@@ -61,7 +59,6 @@ const RenderStd = (pageContext) => {
 
     const output = [[]];
     const { body } = pageContext;
-    console.log(pageContext)
 
     body.forEach(item => {
         

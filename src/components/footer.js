@@ -18,7 +18,7 @@ const Footer = ({ siteTitle }) => {
         <p
           class="mx-auto mt-2 max-w-md text-center leading-relaxed text-gray-500 lg:text-left"
         >
-          The Fairfield Programming Association Standards website provides open access to anyone who would like to adapt standards put forth by the FPA.
+          The Fairfield Programming Association Vault provides open access to anyone who would like to adapt standards put forth by the FPA.
         </p>
       </div>
       <nav aria-label="Footer Nav">
