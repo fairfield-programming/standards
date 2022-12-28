@@ -58,11 +58,11 @@ function CreatePage() {
 
     return (
         <Layout>
-            <section class="w-screen h-screen flex flex-row border-y-2">
+            <section class="h-screen flex flex-row border-y-2">
                 <div class="w-1/2 h-full">
                     <textarea class="w-full h-full bg-slate-100 outline-0 p-2" onChange={(e) => { setData(e.target.value) }}>{data}</textarea>
                 </div>
-                <div class="w-1/2 h-full bg-white overflow-scroll">
+                <div class="w-1/2 h-full bg-white overflow-scroll overflow-x-hidden">
                     <StandardHtml pageContext={cleanedData} />
                 </div>
             </section>
