@@ -35,8 +35,8 @@ function ProgramsPage() {
 
   return (
     <Layout>
-      <section className="mt-8">
-        <div class="mx-auto max-w-screen-xl px-4 py-4">
+      <section>
+        <div class="mx-auto max-w-6xl px-4 pb-16 flex flex-col mt-8">
           <h2 className="font-bold text-4xl mb-4">Standards</h2>
           <p className="text-xl mb-3 max-w-2xl">
             Below is a list of all the standards that are stored in the Vault.
