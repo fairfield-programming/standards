@@ -49,6 +49,6 @@ function IndexPage() {
   )
 }
 
-export const Head = () => <Seo title="Home" />
+export const Head = () => <Seo title="Home" description="We build simple, innovative, and modular standards without layers of bureaucracy and nonsense" />
 
 export default IndexPage

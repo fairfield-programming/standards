@@ -71,6 +71,6 @@ function CreatePage() {
 
 }
 
-export const Head = () => <Seo title="Create" />
+export const Head = () => <Seo title="Create a standard" />
 
 export default CreatePage
