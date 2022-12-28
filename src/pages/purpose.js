@@ -32,6 +32,6 @@ function ContactPage() {
     )
 }
 
-export const Head = () => <Seo title="Purpose" />
+export const Head = () => <Seo title="Purpose" description="Purpose of the Vault" />
 
 export default ContactPage
