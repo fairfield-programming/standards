@@ -26,6 +26,7 @@ function slugify(name) {
 /**
  * @type {import('gatsby').GatsbyNode['createPages']}
  */
+
 exports.createPages = ({ actions }) => {
   
   const standards = fs.readdirSync('./standards');
@@ -89,4 +90,12 @@ exports.createPages = ({ actions }) => {
 
   fs.writeFileSync('./data/standards.json', JSON.stringify(standardsFileData, null, 4));
 
+}
+
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    node: {
+      fs: 'empty'
+    }
+  })
 }
