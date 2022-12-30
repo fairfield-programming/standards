@@ -12,7 +12,7 @@ module.exports = {
     title: `FPA Vault`,
     description: `The FPA Vault provides open access to anyone who would like to adapt standards put forth by the FPA.`,
     author: `@fairfieldprogramming`,
-    siteUrl: `https://standards.fairfieldprogramming.org`,
+    siteUrl: `https://vault.fairfieldprogramming.org`,
   },
   plugins: [
     'gatsby-plugin-postcss',
@@ -23,7 +23,7 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: false,
-        sitemap: 'https://standards.fairfieldprogramming.org/sitemap/sitemap-index.xml',
+        sitemap: 'https://vault.fairfieldprogramming.org/sitemap/sitemap-index.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
