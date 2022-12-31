@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Category from "../components/category"
 
 function IndexPage() {
 
@@ -43,7 +44,7 @@ function IndexPage() {
         </div>
       </section> 
       <section>
-        {/* <Categories/> */}
+        <Category/>
       </section>
     </Layout>
   )
