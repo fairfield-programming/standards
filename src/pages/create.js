@@ -6,8 +6,8 @@ import Seo from "../components/seo"
 
 import StandardHtml from "../templates/standardHtml"
 
-import parse from "../utility/stdParser.js";
-import clean from '../utility/stdCleaner.js';
+import parse from "../utility/stdParser.js"
+import clean from "../utility/stdCleaner.js"
 
 const example = `
 <head>
@@ -47,28 +47,61 @@ Here, you can include some sections for what your standard should be used with.
 
 ## Confirmation Tests
 
-`;
-
+`
 function CreatePage() {
 
-    const [ data, setData ] = React.useState(example);
+  const [data, setData] = React.useState(example)
 
-    const stdData = parse(data);
-    const cleanedData = clean(stdData);
-
-    return (
-        <Layout>
-            <section class="h-screen flex flex-row border-y-2">
-                <div class="w-1/2 h-full">
-                    <textarea class="w-full h-full bg-slate-100 outline-0 p-2" onChange={(e) => { setData(e.target.value) }}>{data}</textarea>
-                </div>
-                <div class="w-1/2 h-full bg-white overflow-scroll overflow-x-hidden">
-                    <StandardHtml pageContext={cleanedData} />
-                </div>
-            </section>
-        </Layout>
-    )
-
+  const stdData = parse(data)
+  const cleanedData = clean(stdData)
+  const [expand, setExpand] = React.useState(false);
+  const handleClick = () =>{
+      setExpand(prevExpand=>!prevExpand);
+    }
+    
+  return (<>
+    {
+        expand===false
+        ?<Layout>
+      <section class="h-screen flex flex-row border-y-2">
+        <div class="w-1/2 h-full">
+          <textarea
+            class="w-full h-full bg-slate-100 outline-0 p-2"
+            onChange={e => {
+              setData(e.target.value)
+            }}
+          >
+            {data}
+          </textarea>
+        </div>
+        <div class="w-1/2 h-full bg-white overflow-scroll overflow-x-hidden">
+          <StandardHtml pageContext={cleanedData} />
+        </div>
+      </section>
+      <button onClick={handleClick} className="px-6 py-4 text-active border-spacing-1"><u>Expand snippet</u>&#x2934;</button>
+      </Layout>
+        :
+        <>
+        
+    <section class="h-screen flex flex-row border-y-2">
+        <div class="w-1/2 h-full">
+          <textarea
+            class="w-full h-full bg-slate-100 outline-0 p-2"
+            onChange={e => {
+              setData(e.target.value)
+            }}
+          >
+            {data}
+          </textarea>
+        </div>
+        <div class="w-1/2 h-full bg-white overflow-scroll overflow-x-hidden">
+          <StandardHtml pageContext={cleanedData} />
+        </div>
+      </section>
+      <button onClick={handleClick} className="px-6 py-4 text-active border-spacing-1"><u>return to Page</u>&#10549;</button>
+      </>}
+      </>
+  )
 }
 
 export const Head = () => <Seo title="Create" />
