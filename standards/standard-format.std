@@ -3,6 +3,7 @@
     <tag>File Format</tag>
     <tag>Markdown</tag>
     <tag>FPA Original</tag>
+    <slug>standard-format</slug>
     <version>0.9.0</version>
     <author github="william-mcgonagle" email="mcgonaglew@fairfieldprogramming.org">
         William McGonagle
