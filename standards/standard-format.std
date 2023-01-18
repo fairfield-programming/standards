@@ -1,36 +1,35 @@
+
 <head>
     <tag>File Format</tag>
-    <tag>New Proposal</tag>
+    <tag>Markdown</tag>
+    <tag>FPA Original</tag>
     <version>0.9.0</version>
-    <slug>standard-format</slug>
-    <author email="mcgonaglew@fairfiledprogramming.org" github="William-McGonagle">
+    <author github="william-mcgonagle" email="mcgonaglew@fairfieldprogramming.org">
         William McGonagle
-    </author>
-    <author email="chaudharin@fairfiledprogramming.org" github="NeilChaudhari">
-        Neil Chaudhari
     </author>
 </head>
 
 # Standard Format
 
-The standard format is a text-based file format similar to Markdown and HTML. This format is formally used in the FPA Vault to manage all standardization information.
+With a simple implementation, create verbose, structured, and readable markdown files that computers can understand.
 
 ## Purpose
 
-The purpose of this file format is to create high quality specification sheets that can be easily converted to HTML and PDF form with advanced control over styling. In contrast to markdown, this format allows for more metadata and advanced features to be supported, while still maintaining readability.
+When writing a blog, news post, rich message, or other pieces of static content, there are many different markdown formats that you can use. Some people choose to use HTML, some people prefer Markdown, and others use a mix of different formats. 
 
-Without this format, the vault would not be able to offer the excellent user and developer experiences that it does through extracting rich data from each file.
+HTML is great for creating complex documents that have their own look and feel, but it lacks uniformity, has a poor experience for people not accustomed to HTML, and is a nightmare for developers to properly implement. 
 
-<note>
-This format is just in development stage. Do not base any production software off of this standard.
-</note>
+Markdown is an option that people prefer because of its simplicity and uniformity. With markdown, documents are human and computer readable, they can have any style applied to them, and there is a great experience for first-time users. The major downsides? Meta-content (information about the document itself), is nearly impossible to store in a simple way. And on top of that, it is confusing to use more advanced elements than text (like images, widgets, buttons, forms, etc). 
 
-### Why not Markdown?
+What is proposed in this document is a new markdown format that combines the best aspects of HTML with the best aspects of Markdown. And, it does it in such a simple way that the developer's experience while implementing this new format is as easy as possible. 
 
-### Why not HTML?
+## Behavior
 
-<code lang="javascript">
+## Architecture
 
-console.log("This is a quick test");
+## Measurable Characteristics
 
-</code>
+## Policy/ Management Requirements
+
+## Examples
+
