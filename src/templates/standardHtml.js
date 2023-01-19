@@ -40,10 +40,15 @@ const GenerateTableOfContents = (pageContext) => {
 
 const RenderTableOfContents = (tableOfContents) => {
 
+    if (tableOfContents == undefined) return <></>;
+    if (tableOfContents.contents == undefined) return <></>;
+    if (typeof tableOfContents.contents != "object") return <></>;
+    if (Array.isArray(tableOfContents.contents)) return <></>;
+
     return <li class="list-disc">
                 {tableOfContents.name}
                 <ol class="pl-4">
-                    {(tableOfContents?.contents || {}).map(item => RenderTableOfContents(item))}
+                    {tableOfContents.contents.map(item => RenderTableOfContents(item))}
                 </ol>
             </li>
 
