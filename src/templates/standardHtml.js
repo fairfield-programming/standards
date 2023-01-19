@@ -43,7 +43,7 @@ const RenderTableOfContents = (tableOfContents) => {
     return <li class="list-disc">
                 {tableOfContents.name}
                 <ol class="pl-4">
-                    {tableOfContents.contents.map(item => RenderTableOfContents(item))}
+                    {(tableOfContents?.contents || {}).map(item => RenderTableOfContents(item))}
                 </ol>
             </li>
 

@@ -3,14 +3,14 @@
     <tag>File Format</tag>
     <tag>Image</tag>
     <tag>FPA Original</tag>
-    <slug>roman-format</slug>
+    <slug>interpolated-image-interchange</slug>
     <version>0.9.0</version>
     <author github="william-mcgonagle" email="mcgonaglew@fairfieldprogramming.org">
         William McGonagle
     </author>
 </head>
 
-# Roman File Format (Interpolated Image Interchange)
+# Interpolated Image Interchange
 
 ## Fundamental Definitions
 
