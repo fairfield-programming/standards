@@ -64,7 +64,7 @@ exports.createPages = ({ actions }) => {
     })
 
     createPage({
-      path: `/standards/${cleanedData.slug}.html`,
+      path: `/standards/${cleanedData.slug}/html`,
       component: require.resolve("./src/templates/standardHtml.js"),
       context: { ...cleanedData, index },
       defer: false,
